@@ -42,5 +42,6 @@ class Tomato:
     states = {1: 'рост', 2: 'цветение', 3: 'созревание'}
     def __init__(self, index):
         self._index = index
-        self._state = 0
-    def grow(self):
+        self._state = 1
+    def grow(self, state):
+        self.state += 1
